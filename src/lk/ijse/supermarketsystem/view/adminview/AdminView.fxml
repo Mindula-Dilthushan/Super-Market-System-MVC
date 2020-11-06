@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: rgb(119, 140, 163);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarketsystem.controller.AdminViewController">
+   <children>
+      <Label layoutX="10.0" layoutY="13.0" prefHeight="56.0" prefWidth="1347.0" style="-fx-background-color: rgb(61, 61, 61);" text="                                                     SYSTEM ADMINITRATOR" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="81.0" prefHeight="677.0" prefWidth="166.0" style="-fx-background-color: rgb(61, 61, 61);" />
+      <JFXButton fx:id="reportBT" buttonType="RAISED" layoutX="18.0" layoutY="449.0" onAction="#reportBtOnAction" prefHeight="72.0" prefWidth="150.0" style="-fx-border-radius: 30;" text="REPORT" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Purchase%20Order_104px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ff00d3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <effect>
+            <DisplacementMap>
+               <mapData>
+                  <FloatMap />
+               </mapData>
+            </DisplacementMap>
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="homeBT" buttonType="RAISED" layoutX="18.0" layoutY="108.0" onAction="#homeBtOnAction" prefHeight="72.0" prefWidth="150.0" text="  HOME" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#007aff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Home_104px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="manageBT" buttonType="RAISED" layoutX="18.0" layoutY="336.0" onAction="#manageBtOnAction" prefHeight="78.0" prefWidth="150.0" text="MANAGE" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ff9000" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Add%20Database_104px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane fx:id="homepanel" layoutX="178.0" layoutY="82.0" prefHeight="677.0" prefWidth="1180.0" style="-fx-border-color: black;">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="1144.0" layoutX="11.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/BgImage/destacada.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <JFXButton fx:id="exitBT" buttonType="RAISED" layoutX="27.0" layoutY="677.0" onAction="#exitBtOnAction" prefHeight="66.0" prefWidth="132.0" text=" EXIT" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Shutdown_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1232.0" layoutY="16.0" prefHeight="43.0" prefWidth="113.0" text="Help" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Help_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ffdf00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="backLoginBT" buttonType="RAISED" layoutX="15.0" layoutY="557.0" onAction="#backLoginBtOnAction" prefHeight="72.0" prefWidth="156.0" text="Login Page" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00a6ff" />
+                  <Stop color="#4100ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Exit_104px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="detailsBT" buttonType="RAISED" layoutX="18.0" layoutY="221.0" onAction="#detailsBtOnAction" prefHeight="78.0" prefWidth="150.0" text="DETAILS" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#00ff50" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Data%20Protection_104px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Separator layoutX="24.0" layoutY="24.0" prefHeight="1.0" prefWidth="308.0" style="-fx-background-color: white;" />
+      <Separator layoutX="159.0" layoutY="40.0" prefHeight="1.0" prefWidth="308.0" style="-fx-background-color: white;" />
+      <Separator layoutX="995.0" layoutY="24.0" prefHeight="3.0" prefWidth="166.0" style="-fx-background-color: white;" />
+      <Separator layoutX="953.0" layoutY="42.0" prefHeight="3.0" prefWidth="273.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

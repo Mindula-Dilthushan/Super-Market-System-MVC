@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarketsystem.controller.adminview.adminotherpage.tables.OrderTableViewController">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="477.0" prefWidth="1091.0">
+         <children>
+            <TableView fx:id="customerMainTB" layoutX="243.0" layoutY="14.0" prefHeight="417.0" prefWidth="605.0">
+               <columns>
+                  <TableColumn fx:id="orderCodeColumn" prefWidth="156.0" text="Order ID" />
+                  <TableColumn fx:id="orderDateColumn" prefWidth="244.0" text="Order Date" />
+                  <TableColumn fx:id="custIdColumn" prefWidth="208.0" text="Customer ID" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="refreshBt" buttonType="RAISED" layoutX="977.0" layoutY="426.0" onAction="#refreshBtOnAction" text="Refresh ">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffef00" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

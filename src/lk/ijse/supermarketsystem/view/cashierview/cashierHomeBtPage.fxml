@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="667.0" prefWidth="1172.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarketsystem.controller.cashierview.CashierHomeBtPageController">
+   <children>
+      <ImageView fitHeight="667.0" fitWidth="1172.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../image/BgImage/screen-4.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

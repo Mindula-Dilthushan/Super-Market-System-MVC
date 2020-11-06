@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="667.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarketsystem.controller.adminview.AdministrationViewReportController">
+   <children>
+      <Label layoutX="12.0" layoutY="13.0" prefHeight="86.0" prefWidth="1142.0" style="-fx-background-color: rgb(204, 142, 53);" />
+      <JFXButton fx:id="incomeBT" buttonType="RAISED" layoutX="48.0" layoutY="21.0" onAction="#incomeBtOnAction" prefHeight="71.0" prefWidth="147.0" text="Income" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../lk/ijse/supermarketsystem/image/Money%20Bag%20Euro_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ffcc00" offset="0.894927536231884" />
+                  <Stop color="#ffcc00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="mostMovableItemBT" buttonType="RAISED" layoutX="267.0" layoutY="21.0" onAction="#mostMovableItemBtOnAction" prefHeight="71.0" prefWidth="231.0" text="Most Movable Item" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="59.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../lk/ijse/supermarketsystem/image/Shopping%20Cart_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ffcc00" offset="0.894927536231884" />
+                  <Stop color="#ffcc00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="leastMovableItemBT" buttonType="RAISED" layoutX="552.0" layoutY="21.0" onAction="#leastMovableItemBtOnAction" prefHeight="71.0" prefWidth="248.0" text="Least Movable Item" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="59.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../lk/ijse/supermarketsystem/image/Luggage%20Trolley_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ffcc00" offset="0.894927536231884" />
+                  <Stop color="#ffcc00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="customerWiseIncomeBT" buttonType="RAISED" layoutX="843.0" layoutY="21.0" onAction="#customerWiseIncomeBtOnAction" prefHeight="49.0" prefWidth="270.0" text="Customer Wise Income" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="59.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Buy_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ffcc00" offset="0.894927536231884" />
+                  <Stop color="#ffcc00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+   </children>
+</AnchorPane>

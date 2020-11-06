@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="637.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarketsystem.controller.cashierview.NewCustomerController">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="601.0" layoutX="19.0" layoutY="65.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../image/BgImage/unnamed.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="54.0" layoutY="65.0" opacity="0.68" prefHeight="520.0" prefWidth="531.0" style="-fx-background-color: white;" />
+      <Label layoutX="187.0" layoutY="144.0" text="Customer ID :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="196.0" text="Customer Title :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="244.0" text="Customer Name :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="290.0" text="Customer Address :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="338.0" text="City :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="388.0" text="Province :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="437.0" text="Postal Code :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="custTitleTxt" layoutX="326.0" layoutY="186.0" onAction="#custTitleTxtOnAction" prefHeight="31.0" prefWidth="197.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="custNameTxt" layoutX="326.0" layoutY="233.0" onAction="#custNameTxtOnAction" prefHeight="31.0" prefWidth="197.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="custAddressTxt" layoutX="327.0" layoutY="281.0" onAction="#custAddressTxtOnAction" prefHeight="31.0" prefWidth="197.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="cityTxt" layoutX="326.0" layoutY="329.0" onAction="#cityTxtOnAction" prefHeight="31.0" prefWidth="197.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="provinceTxt" layoutX="327.0" layoutY="379.0" onAction="#provinceTxtOnAction" prefHeight="31.0" prefWidth="197.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="postalCodeTxt" layoutX="327.0" layoutY="426.0" onAction="#postalCodeTxtOnAction" prefHeight="31.0" prefWidth="197.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="saveBt" buttonType="RAISED" layoutX="345.0" layoutY="576.0" onAction="#saveBtOnAction" text="Save " textFill="#0025ff">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#00d0ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="backBt" buttonType="RAISED" layoutX="469.0" layoutY="576.0" onAction="#backBtOnAction" text="Back" textFill="#003cff">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#00d0ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXTextField fx:id="custidTxt" layoutX="327.0" layoutY="133.0" prefHeight="31.0" prefWidth="197.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="640.0" style="-fx-border-color: black; -fx-background-color: rgb(52, 172, 224);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarketsystem.controller.LoginViewController">
+    <children>
+      <Label layoutX="19.0" layoutY="19.0" prefHeight="683.0" prefWidth="604.0" style="-fx-background-color: black;">
+         <effect>
+            <Shadow />
+         </effect></Label>
+      <Label layoutX="29.0" layoutY="29.0" prefHeight="663.0" prefWidth="583.0" style="-fx-background-color: rgb(26, 188, 156);">
+         <graphic>
+            <Label prefWidth="616.0" />
+         </graphic></Label>
+        <Label layoutX="136.0" layoutY="72.0" text="Super Market System" textFill="#2f3542">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="40.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="379.0" fitWidth="502.0" layoutX="69.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/13a2397d44c350d64f770e6a9ed4bc9b.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="69.0" layoutY="213.0" opacity="0.66" prefHeight="376.0" prefWidth="502.0" style="-fx-background-color: black;" />
+        <Label layoutX="272.0" layoutY="126.0" text="Login " textFill="#2f3542">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="124.0" layoutY="317.0" text="User Name :" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="140.0" layoutY="386.0" text="Password :" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="25.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="usernameTxt" focusColor="#00fff2" layoutX="271.0" layoutY="314.0" onAction="#usrnameTxtOnAction" opacity="0.9" prefHeight="31.0" prefWidth="204.0" promptText="USER NAME" style="-fx-background-color: white;" unFocusColor="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="17.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+        <JFXPasswordField fx:id="passwordTxt" focusColor="#00fff2" layoutX="271.0" layoutY="385.0" onAction="#passwordTxtOnAction" opacity="0.9" prefHeight="31.0" prefWidth="204.0" promptText="PASSWORD" style="-fx-background-color: white;" unFocusColor="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="17.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXPasswordField>
+        <JFXButton fx:id="loginBt" buttonType="RAISED" layoutX="357.0" layoutY="524.0" onAction="#loginBtOnAction" style="-fx-background-color: rgb(34, 112, 147);" text="Login " textFill="WHITE">
+            <ripplerFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#00ffe1" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </ripplerFill>
+            <font>
+                <Font name="Times New Roman Bold Italic" size="20.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <JFXButton fx:id="exitBt" buttonType="RAISED" layoutX="468.0" layoutY="524.0" onAction="#exitBtOnAction" style="-fx-background-color: rgb(34, 112, 147);" text="Exit " textFill="WHITE">
+            <ripplerFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#00ffeb" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </ripplerFill>
+            <font>
+                <Font name="Times New Roman Bold Italic" size="20.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+      <Label fx:id="lblDateTime" layoutX="530.0" layoutY="29.0" prefHeight="32.0" prefWidth="82.0">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

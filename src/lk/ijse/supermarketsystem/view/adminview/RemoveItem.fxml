@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="564.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarketsystem.controller.adminview.RemoveItemController">
+   <children>
+      <ImageView fitHeight="564.0" fitWidth="1143.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../image/BgImage/stains_light_color_background_47319_1920x1080.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="11.0" layoutY="13.0" opacity="0.62" prefHeight="539.0" prefWidth="314.0" style="-fx-background-color: black;" />
+      <Label layoutX="45.0" layoutY="125.0" text="Item Code :" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="185.0" text="Item Desc :" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="242.0" text="Pack Size :" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="297.0" text="Unit Price :" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="358.0" text="Qty On Hand :" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="itemcodeTxt" focusColor="WHITE" labelFloat="true" layoutX="163.0" layoutY="104.0" prefHeight="44.0" prefWidth="147.0" unFocusColor="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="itemDescTxt" focusColor="WHITE" labelFloat="true" layoutX="165.0" layoutY="163.0" prefHeight="44.0" prefWidth="147.0" unFocusColor="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="packSizeTxt" focusColor="WHITE" labelFloat="true" layoutX="166.0" layoutY="220.0" prefHeight="44.0" prefWidth="147.0" unFocusColor="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="unitPriceTxt" focusColor="WHITE" labelFloat="true" layoutX="165.0" layoutY="275.0" prefHeight="44.0" prefWidth="147.0" unFocusColor="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="qtyOnHandTxt" focusColor="WHITE" labelFloat="true" layoutX="168.0" layoutY="336.0" prefHeight="44.0" prefWidth="147.0" unFocusColor="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tableViewMain" layoutX="344.0" layoutY="115.0" opacity="0.66" prefHeight="434.0" prefWidth="787.0">
+         <columns>
+            <TableColumn fx:id="itemCodeColumn" prefWidth="119.0" text="Item Code " />
+            <TableColumn fx:id="itemDescColumn" prefWidth="202.0" text="Item Description" />
+            <TableColumn fx:id="packColumn" prefWidth="162.0" text="Pack Size" />
+            <TableColumn fx:id="unitpriceColumn" prefWidth="161.0" text="Unit Price" />
+            <TableColumn fx:id="qtyonhandColumn" prefWidth="142.0" text="QTY On Hand" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="deleteBT" buttonType="RAISED" layoutX="93.0" layoutY="435.0" onAction="#deleteBtOnAction" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Remove%20Property_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="refreshBt" buttonType="RAISED" layoutX="938.0" layoutY="52.0" onAction="#refreshBtOnAction" prefHeight="55.0" prefWidth="192.0" text="Refresh Table" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="" fitHeight="34.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Refresh_104px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="95.0" layoutY="44.0" text="Remove Item" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="searchBT" layoutX="344.0" layoutY="52.0" onAction="#searchBtOnAction" prefHeight="51.0" prefWidth="242.0" text="Search Item Code" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Google%20Web%20Search_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

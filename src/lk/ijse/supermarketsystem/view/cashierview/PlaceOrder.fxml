@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="placeorderpanel" prefHeight="677.0" prefWidth="1172.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarketsystem.controller.cashierview.PlaceOrderController">
+   <children>
+      <AnchorPane prefHeight="677.0" prefWidth="1172.0">
+         <children>
+            <ImageView fitHeight="677.0" fitWidth="1172.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../image/BgImage/thumb-1920-70292.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="539.0" layoutY="64.0" prefHeight="292.0" prefWidth="412.0" style="-fx-border-color: black;" />
+            <Label layoutX="14.0" layoutY="67.0" prefHeight="206.0" prefWidth="431.0" style="-fx-border-color: black;" />
+            <Label layoutX="12.0" layoutY="360.0" opacity="0.35" prefHeight="302.0" prefWidth="1146.0" style="-fx-background-color: black;" />
+            <Label layoutY="8.0" prefHeight="47.0" prefWidth="1172.0" style="-fx-background-color: rgb(47, 54, 64);" textFill="WHITE" />
+            <Label layoutX="433.0" layoutY="10.0" prefHeight="47.0" prefWidth="263.0" text="PLACE ORDER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="118.0" text="Order ID :" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="orderIdLbl" layoutX="180.0" layoutY="119.0" prefHeight="25.0" prefWidth="155.0" style="-fx-border-color: black;" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="77.0" text="Order Date :" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="orderdateTxt" layoutX="182.0" layoutY="67.0" onAction="#orderdateLblOnAction" prefHeight="32.0" prefWidth="117.0" style="-jfx-label-float: red;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="47.0" layoutY="167.0" text="Customer ID :" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="newCustBT" layoutX="350.0" layoutY="150.0" onAction="#newCustBtOnAction" prefHeight="40.0" prefWidth="89.0" text="New" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="23.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="custIdComboBox" layoutX="180.0" layoutY="161.0" onAction="#custIdComboBoxOnAction" prefHeight="23.0" prefWidth="155.0" />
+            <Label layoutX="19.0" layoutY="210.0" text="Customer Name :" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="custNameLbl" layoutX="180.0" layoutY="211.0" prefHeight="25.0" prefWidth="155.0" style="-fx-border-color: black;" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableMainPlaceOrder" layoutX="42.0" layoutY="383.0" opacity="0.96" prefHeight="206.0" prefWidth="1092.0">
+              <columns>
+                <TableColumn fx:id="itemCodeColumn" prefWidth="119.0" text="Item Code" />
+                <TableColumn fx:id="descripColumn" prefWidth="303.0" text="Description " />
+                  <TableColumn fx:id="qtyColumn" minWidth="0.0" prefWidth="110.0" text="QTY" />
+                  <TableColumn fx:id="unityPriceColumn" minWidth="0.0" prefWidth="179.0" text="Unit Price (Rs.)" />
+                  <TableColumn fx:id="discountColumn" prefWidth="168.0" text="Discount " />
+                  <TableColumn fx:id="totalColumn" minWidth="0.0" prefWidth="235.0" text="Total (Rs.)" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="placeOrderBT" layoutX="971.0" layoutY="603.0" prefHeight="47.0" prefWidth="164.0" text="Place Order" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="39.0" layoutY="607.0" text="The Whole Collection (Rs.): " textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="606.0" layoutY="73.0" text="Item Code :" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="597.0" layoutY="118.0" text="Description :" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="itemCodeComboBox" layoutX="737.0" layoutY="67.0" onAction="#itemCodeComboBoxOnAction" prefHeight="31.0" prefWidth="117.0" unFocusColor="WHITE" />
+            <Label layoutX="658.0" layoutY="258.0" text="QTY :" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="qtyTxt" layoutX="737.0" layoutY="249.0" onAction="#qtyTxtOnAction" prefHeight="32.0" prefWidth="112.0" style="-fx-effect: red;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </JFXTextField>
+            <JFXButton fx:id="addItemBT" layoutX="987.0" layoutY="76.0" onAction="#addItemBtOnAction" prefHeight="47.0" prefWidth="133.0" text="Add " textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="removeBT" layoutX="977.0" layoutY="147.0" onAction="#removeBtOnAction" prefHeight="47.0" prefWidth="159.0" text="Remove" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="descripTxt" layoutX="737.0" layoutY="111.0" onAction="#descripTxtOnAction" prefHeight="32.0" prefWidth="196.0" style="-fx-effect: red;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="lblStock" layoutX="737.0" layoutY="162.0" prefHeight="23.0" prefWidth="110.0" style="-fx-border-color: black;" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="unitPriceLbl" layoutX="737.0" layoutY="206.0" prefHeight="25.0" prefWidth="110.0" style="-fx-border-color: black;" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="collectionRsTxt" layoutX="350.0" layoutY="604.0" onAction="#collectionRsTxtOnAction" prefHeight="31.0" prefWidth="189.0" style="-fx-border-color: black;">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </JFXTextField>
+            <Label layoutX="558.0" layoutY="163.0" text="Available Stock :" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="559.0" layoutY="206.0" text="Unit Price (Rs.) :" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="refreshbt" layoutX="984.0" layoutY="302.0" onAction="#refreshbtOnAction" prefHeight="47.0" prefWidth="144.0" text="Refresh" textFill="WHITE">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/Google%20Web%20Search_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="624.0" layoutY="312.0" text="Discount :" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="discountTxt" layoutX="736.0" layoutY="305.0" onAction="#qtyTxtOnAction" prefHeight="32.0" prefWidth="112.0" style="-fx-effect: red;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </JFXTextField>
+            <Separator layoutX="9.0" layoutY="14.0" prefHeight="3.0" prefWidth="304.0" />
+            <Separator layoutX="89.0" layoutY="43.0" prefHeight="3.0" prefWidth="304.0" />
+            <Separator layoutX="267.0" layoutY="30.0" prefHeight="3.0" prefWidth="152.0" />
+            <Separator layoutX="702.0" layoutY="32.0" prefHeight="3.0" prefWidth="152.0" />
+            <Separator layoutX="852.0" layoutY="16.0" prefHeight="3.0" prefWidth="304.0" />
+            <Separator layoutX="737.0" layoutY="45.0" prefHeight="3.0" prefWidth="304.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

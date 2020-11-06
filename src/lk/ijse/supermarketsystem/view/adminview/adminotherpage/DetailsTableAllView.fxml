@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="667.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarketsystem.controller.adminview.adminotherpage.DetailsTableAllViewController">
+   <children>
+      <Label layoutX="16.0" layoutY="17.0" prefHeight="39.0" prefWidth="1134.0" style="-fx-background-color: rgb(154, 236, 219);" textFill="#d1d8e0">
+         <font>
+            <Font name="Times New Roman Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="17.0" text="All DataBase Details ">
+         <font>
+            <Font name="Times New Roman Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="72.0" prefHeight="582.0" prefWidth="1134.0" style="-fx-background-color: rgb(46, 204, 113);" />
+      <AnchorPane fx:id="tablepanel" layoutX="36.0" layoutY="156.0" prefHeight="477.0" prefWidth="1091.0">
+         <children>
+            <ImageView fitHeight="477.0" fitWidth="1091.0" layoutX="122.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/BgImage/260-181063-kv-sivacon8ps-1920x1080px.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <JFXButton fx:id="custTableBt" buttonType="RAISED" layoutX="72.0" layoutY="98.0" onAction="#custTableBtOnAction" text="Customer" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="20.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ded1d1" />
+                  <Stop color="#faff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="ItemTableBT" buttonType="RAISED" layoutX="390.0" layoutY="98.0" onAction="#ItemTableBtOnAction" text="Item " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="20.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ded1d1" />
+                  <Stop color="#faff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="ordetableBt" buttonType="RAISED" layoutX="650.0" layoutY="98.0" onAction="#ordetableBtOnAction" text="Order" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="20.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ded1d1" />
+                  <Stop color="#faff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="orderdetailsBT" buttonType="RAISED" layoutX="876.0" layoutY="98.0" onAction="#orderdetailsBtOnAction" text="Order Details " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="20.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ded1d1" />
+                  <Stop color="#faff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+   </children>
+</AnchorPane>
