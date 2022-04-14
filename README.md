@@ -15,7 +15,7 @@ git clone https://github.com/Mindula-Dilthushan/Super-Market-System-MVC.git
 ![GitHub Contributions](https://img.shields.io/github/contributors/Mindula-Dilthushan/Super-Market-System-MVC?&labelColor=black&color=8854d0&style=for-the-badge)
 
 ### License 📝
-[![GitHub license](https://img.shields.io/github/master/Mindula-Dilthushan/Super-Market-System-MVC?&labelColor=black&color=3867d6&style=for-the-badge)](https://github.com/Mindula-Dilthushan/Super-Market-System-MVC/blob/license/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Mindula-Dilthushan/Super-Market-System-MVC?&labelColor=black&color=3867d6&style=for-the-badge)](https://github.com/Mindula-Dilthushan/Super-Market-System-MVC/blob/license/LICENSE)
 
 <div align="center">
 
